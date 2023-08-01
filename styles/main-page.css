@@ -1,0 +1,36 @@
+.main-page{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../img/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+    color: rgb(255, 255, 255);
+    margin-top: -60px;
+    padding-top: 226px;
+    padding-bottom: 120px;
+}
+
+.left-main-page{
+    flex: 1;
+}
+
+.my-picture{
+    background-color: blueviolet;
+    height: 400px;
+    width: 240px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.about-me{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.right-main-page{
+    flex: 1;
+}
