@@ -19,7 +19,6 @@
 }
 .back-to-top:hover {
     background-color: rgba(255, 255, 255, 0.55);
-    width: 120px;
 }
 .back-to-top:active{
     background-color: rgba(255, 255, 255, 0.9);
