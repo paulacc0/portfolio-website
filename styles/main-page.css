@@ -1,14 +1,14 @@
 .main-page{
     background-color: rgb(0, 0, 0);
-    background-image: url("../img/background3.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
 
     color: rgb(255, 255, 255);
-    padding-top: 145px;
-    padding-bottom: 145px;
+    padding-top: 190px;
+    padding-bottom: 190px;
 }
 
 .left-main-page{
