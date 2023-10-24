@@ -76,3 +76,43 @@
     margin-right: 20px;
     padding: 30px;
 }
+
+.project-link{
+    background-color: rgba(255, 255, 255, 0.10);
+    color: white;
+    border-radius: 20px;
+    height: 70px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.project-link:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.project-link:active{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.read-more-less{
+    background-color: transparent;
+    color: white;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 7%;
+    border-color: rgb(169, 156, 189);
+    border-width: 2px;
+    border-radius: 10px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+.read-more-less:hover{
+    background-color: rgba(47, 36, 124, 1);
+}
+.read-more-less:active{
+    background-color: rgba(47, 36, 124, 0.5);
+}

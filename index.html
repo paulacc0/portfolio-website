@@ -87,9 +87,6 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
     </div>
     <div class="main-page">
         <div class="left-main-page"></div>
-        <div>
-            <img class="my-picture" src="img/shiba1.jpg">
-        </div>
         <div class="about-me">
             <h1>Hi! I'm Paula (pah-oo-lah)</h1>
             <h2>I'm a second-year CS student seeking a year-long
@@ -107,7 +104,7 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
         <div class="project-1">
             <div class="left-main-page"></div>
             <div class="project-1-video">
-                <video width="400px" height="400px" controls>
+                <video width="400px" height="250px" controls>
                     <source src="img/Faeremin.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -117,58 +114,221 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
                     a theremin for people that cannot play a regular
                     instrument. Me and my partner were fascinated by the
                     idea of a theremin so we decided to create an
-                    alternative version of it. With the help of a couple of
+                    alternative version of it. <span id="dots1">...</span>
+                    <span id="more1" style="display: none;">With the help of a couple of
                     ultrasonic sensors, 2 Arduino UNOs communicating with
                     each other and a bunch of other components, we were
                     able to create the instrument in the video shown on
-                    the left.
+                    the left.</span>
                 </p>
+                <button onclick="ReadMoreLess1()" id="read-more-less1" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess1() {
+                var dots = document.getElementById("dots1");
+                var moreText = document.getElementById("more1");
+                var btnText = document.getElementById("read-more-less1");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
             </div>
             <div class="right-main-page"></div>
         </div>
         <div class="project-2">
             <div class="left-main-page"></div>
             <div class="project-2-sum">
-                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Whack-A-Mole</div>
-                <p>University project. Arduino UNO LED Whack-A-Mole. 
-                    This was my first ever Arduino project. It was formative
-                    but I loved it so much I put more effort in it than
-                    in the mandatory one. This must be one of my favourite
-                    projects so far. Even if it was a simple game, it
-                    definitely did not seem like it at the time but I still
-                    enjoyed every second of it. The only thing that stopped
-                    me was the battery not being able to handle so many
-                    components.
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Whac-A-Mole</div>
+                <p>University project. Arduino UNO LED Whack-A-Mole game. 
+                    This was my first ever Arduino project, a
+                    modification of the game "Whac-A-Mole", a 
+                    2-player reflex game where the aim is to press
+                    a button when any of your colour LEDs lights up.
+                    <span id="dots2">...</span> <span id="more2" style="display: none;">
+                    If you manage to press the button in time, you
+                    will score a point. The first player to reach 
+                    10 points will be the winner and the game will end.
+
+                    <br> <br> Please watch the video on the right to see a demo 
+                    of how the game works.
+                
+                    <br> <br>This Arduino UNO setup includes:
+                    <br><br>
+                    &nbsp;1 Liquid Crystal Display Screen<br>
+                    &nbsp;1 shift register<br>
+                    &nbsp;10 LEDs<br>
+                    &nbsp;3 10k &#8486 resistors<br>
+                    &nbsp;10 560 &#8486 resistors<br>
+                    &nbsp;1 servo motor<br>
+                    &nbsp;3 buttons<br>
+                    &nbsp;1 piezo buzzer<br>
+                    &nbsp;1 potentiometer</span>
                 </p>
-                <p>This Arduino UNO setup has 10 LEDs, 1 shift register,
-                    1 piezo, 1 servo  motor, 1 potentiometer and 1 LCD screen,
-                    3 buttons and over 10 resistors.
-                </p>
+                <button onclick="ReadMoreLess2()" id="read-more-less2" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess2() {
+                var dots = document.getElementById("dots2");
+                var moreText = document.getElementById("more2");
+                var btnText = document.getElementById("read-more-less2");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
             </div>
             <div class="project-2-video">
-                <video width="400px" height="400px" controls>
+                <video width="400px" height="250px" controls>
                     <source src="img/WhackAMole.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="right-main-page"></div>
         </div>
-        <div class="project-3">
+        <div class="project-1">
             <div class="left-main-page"></div>
             <div>
                 <img class="project-3-photo" src="img/websiteSS.png">
             </div>
-            <div class="project-3-sum">
+            <div class="project-1-sum">
                 <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">This very website</div>
                 <p>Personal project. Website portfolio.
                     This is the first time I have worked on a
                     solo project in HTML, CSS and JS. The only previous
                     experience I had was in our group project which is 
                     mentioned below but I was not in charge of that area
-                    so I just got a slight idea of how it worked. However,
-                    because of that little exposure to HTML specifically,
+                    so I just got a slight idea of how it worked.
+                    <span id="dots3">...</span> <span id="more3" style="display: none;">
+                    However, because of that little exposure to HTML specifically,
                     I became extremely interested and decided to research 
-                    it further which led to the building of this website!
+                    it further which led to the building of this website!</span>
                 </p>
+                <button onclick="ReadMoreLess3()" id="read-more-less3" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess3() {
+                var dots = document.getElementById("dots3");
+                var moreText = document.getElementById("more3");
+                var btnText = document.getElementById("read-more-less3");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">ELI</div>
+                <p>Personal project. 2D platformer game on Unity.
+                    This is the game I am the most proud of so far.
+                    It was a huge step from my previous projects in 
+                    Scratch.<span id="dots4">...</span> <span id="more4" style="display: none;">
+                    
+                    <br><br>
+                    When I started this project I knew nothing about C#,
+                    so I am really happy with what I was able to achieve.
+                    I did all of the pixel art as well, including all the
+                    animations. I had never animated before either so I
+                    am amazed by how it turned out. I hope to be able to
+                    expand on this project in a near future and add in
+                    some more levels, new mechanisms and a story.</span>
+                </p>
+                <button onclick="ReadMoreLess4()" id="read-more-less4" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess4() {
+                var dots = document.getElementById("dots4");
+                var moreText = document.getElementById("more4");
+                var btnText = document.getElementById("read-more-less4");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="project-2-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/EliGame.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div>
+                <img class="project-3-photo" src="img/websiteSS.png">
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Racoon Tycoon</div>
+                <div>
+                    <button  class="project-link" onclick=" window.open('https://scratch.mit.edu/projects/657104396/','_blank')">
+                        <div style="text-align: center;">
+                            <img src="img/scratch.png" alt="Image" width="30px" height="30px" style="filter: invert(100%);"  >
+                        </div>
+                        <div>Play the game!</div>
+                    </button>
+                </div>
+                <p>Personal project. Website portfolio.
+                    This is the first time I have worked on a
+                    solo project in HTML, CSS and JS. The only previous
+                    experience I had was in our group project which is 
+                    mentioned below but I was not in charge of that area
+                    so I just got a slight idea of how it worked.
+                    <span id="dots3">...</span> <span id="more3" style="display: none;">
+                    However, because of that little exposure to HTML specifically,
+                    I became extremely interested and decided to research 
+                    it further which led to the building of this website!</span>
+                </p>
+                <button onclick="ReadMoreLess3()" id="read-more-less3" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess3() {
+                var dots = document.getElementById("dots3");
+                var moreText = document.getElementById("more3");
+                var btnText = document.getElementById("read-more-less3");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
             </div>
             <div class="right-main-page"></div>
         </div>
