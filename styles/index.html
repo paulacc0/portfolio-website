@@ -1,0 +1,390 @@
+
+
+<!--
+smooth reveal of the welcome page
+cambiar el mapache
+poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
+
+-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula's portfolio</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/main-page.css">
+    <link rel="stylesheet" href="styles/projects-page.css">
+    <link rel="stylesheet" href="styles/back-to-top.css">
+    <link rel="stylesheet" href="styles/welcome-page.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <button class="reload-button" onclick="window.location.reload();">
+                <div>
+                    <img class="logo" src="img/logo.png">
+                </div>
+            </button>
+        </div>
+        <div class="pcc">
+            <button class="reload-button" onclick="window.location.reload();">
+                <div>
+                    <img class="pcc" src="img/pcc.png">
+                </div>
+            </button>
+        </div>
+        <div class="middle-header"></div>
+        <div class="right-header">
+            <button class="top-buttons" onclick="aboutMeScroll()">
+                About me
+            </button>
+            <script>
+                function aboutMeScroll(){
+                    document.querySelector('.main-page').scrollIntoView({behavior: 'smooth'})
+                }
+            </script>
+            <div class="line-between-buttons" style="border:1px solid #ffffff;
+            display: inline;margin-left: -4px;padding-top: 5px;padding-bottom: 6px;"></div>
+            <button class="top-buttons" onclick="projectScroll()">
+                Projects
+            </button>
+            <script>
+                function projectScroll(){
+                    document.querySelector('.projects-page').scrollIntoView({behavior: 'smooth'})
+                }
+            </script>
+            <div class="line-between-buttons" style="border:1px solid #ffffff;
+            display: inline;margin-left: -4px;padding-top: 5px;padding-bottom: 6px;"></div>
+            <button class="top-buttons" onclick="contactScroll()">
+                Incoming
+            </button>
+            <script>
+                function contactScroll(){
+                    document.querySelector('.incoming-projects-page').scrollIntoView({behavior: 'smooth'})
+                }
+            </script>
+        </div>
+    </div>
+    <div class="welcome-page">
+        <div class="left-main-page"></div>
+        <div class="welcome-div">
+            <h1>WELCOME TO MY WEBSITE PORTFOLIO</h1>
+            <h2>This is a showcase of everything I have learnt
+                and all the projects I have worked on in
+                the past year!
+            </h2>
+        </div>
+        <div class="right-main-page"></div>
+    </div>
+    <div class="main-page">
+        <div class="left-main-page"></div>
+        <div class="about-me">
+            <h1>Hi! I'm Paula (pah-oo-lah)</h1>
+            <h2>I'm a second-year CS student seeking a year-long
+            placement in website design or(? game development
+            and this my website portfolio! In the section below
+            I talk about projects I have completed in Python,
+            C, HMTL, CSS, JavaScript and Java.</h2>
+        </div>
+        <div class="right-main-page"></div>
+    </div>
+    <div class="projects-page">
+        <div class="projects-title">
+            Projects
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-1-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/Faeremin.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Faeremin</div>
+                <p>Touchless instrument inspired by
+                    the electronic musical instrument, the theremin. <br><br>
+                    In order to play the theremin, you require incredible body control.
+                    Our prototype, the "Faeremin", with its simplified design, 
+                    accommodates people who lack those motor skills.<span id="dots1">...</span>
+                    <span id="more1" style="display: none;">
+                    For instance, people with Parkinson's disease, dyspraxia or 
+                    in early stages of motor beuron diseases would benefit
+                    from our solution as well as amputees or people born with 
+                    amelia due to its simplified desgin.
+
+                    <br> <br> Please watch the video on the left to see a demo 
+                    of how the instrument is played.
+                
+                    <br> <br>This setup includes:
+                    <br><br>
+                    &nbsp;2 Arduino UNO<br>
+                    &nbsp;2 Liquid Crystal Display Screens 16 x 2<br>
+                    &nbsp;2 Ultrasonic Distance Sensors<br>
+                    &nbsp;2 Speakers<br>
+                    &nbsp;3 10 k&#8486 resistors<br>
+                    &nbsp;2 9V Batteries<br>
+                    &nbsp;2 Transistors<br>
+                    &nbsp;1 piezo buzzer<br>
+                    &nbsp;4 250 k&#8486 potentiometer
+                    &nbsp;3 buttons</span>
+                </p>
+                <button onclick="ReadMoreLess1()" id="read-more-less1" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess1() {
+                var dots = document.getElementById("dots1");
+                var moreText = document.getElementById("more1");
+                var btnText = document.getElementById("read-more-less1");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Whac-A-Mole</div>
+                <p>Arduino UNO LED Whack-A-Mole game. <br><br>
+                    This was my first ever Arduino project, a
+                    modification of the game "Whac-A-Mole", a 
+                    2-player reflex game where the aim is to press
+                    a button when any of your colour LEDs lights up.<span id="dots2">...</span>
+                    <span id="more2" style="display: none;">
+                    If you manage to press the button in time, you
+                    will score a point. The first player to reach 
+                    10 points will be the winner and the game will end.
+
+                    <br> <br> Please watch the video on the right to see a demo 
+                    of how the game works.
+                
+                    <br> <br>This Arduino UNO setup includes:
+                    <br><br>
+                    &nbsp;1 Liquid Crystal Display Screen 16 x 2<br>
+                    &nbsp;1 shift register<br>
+                    &nbsp;10 LEDs<br>
+                    &nbsp;3 10k &#8486 resistors<br>
+                    &nbsp;10 560 &#8486 resistors<br>
+                    &nbsp;1 servo motor<br>
+                    &nbsp;3 buttons<br>
+                    &nbsp;1 piezo buzzer<br>
+                    &nbsp;1 250 k&#8486 potentiometer</span>
+                </p>
+                <button onclick="ReadMoreLess2()" id="read-more-less2" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess2() {
+                var dots = document.getElementById("dots2");
+                var moreText = document.getElementById("more2");
+                var btnText = document.getElementById("read-more-less2");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="project-2-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/WhackAMole.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div>
+                <img class="project-3-photo" src="img/websiteSS.png">
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">This very website</div>
+                <p>Website portfolio. <br><br>
+                    I decided to create this website to
+                    showcase projects and learn more about website development.
+                    This is my first time working on an HTML, CSS and JS
+                    solo project. The only previous experience I had was in a group
+                    project where we developed a mood tracking web app.<span id="dots3">...</span>
+                    <span id="more3" style="display: none;">
+                    <br><br> I was not in charge of the front-end at the time but,
+                    because of that little exposure to HTML and CSS mostly,
+                    I became extremely interested and decided to research 
+                    it further which led to the building of this website!
+                    <br><br> I will be updating this website as I complete
+                    more projects. Hopefully soon, I will also give it an overall make over
+                    in terms of graphic design when I expand my knowledge
+                    in CSS even further.</span>
+                </p>
+                <button onclick="ReadMoreLess3()" id="read-more-less3" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess3() {
+                var dots = document.getElementById("dots3");
+                var moreText = document.getElementById("more3");
+                var btnText = document.getElementById("read-more-less3");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">ELI</div>
+                <p>2D platformer game on Unity using C#. <br><br>
+                    This game is a short level where you
+                    control the main character named Eli on his
+                    travels across slime-infested dungeons.
+                    <br><br>
+                    This is the game I am the most proud of so far.<span id="dots4">...</span>
+                    <span id="more4" style="display: none;">
+                    It was a huge step from my previous games in 
+                    Scratch (linked below).
+                    <br><br>
+                    Please do watch the short video on the right showcasing the game!
+                    <br><br>
+                    When I started this project I knew nothing about C#,
+                    so I am really happy with what I was able to achieve.
+                    I did all of the pixel art myself as well, including all the
+                    animations. I had never animated before either so I
+                    am amazed by how it turned out. I hope to be able to
+                    expand on this project in a near future and add in
+                    some more levels, new mechanisms and a more thought through story.</span>
+                </p>
+                <button onclick="ReadMoreLess4()" id="read-more-less4" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess4() {
+                var dots = document.getElementById("dots4");
+                var moreText = document.getElementById("more4");
+                var btnText = document.getElementById("read-more-less4");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="project-2-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/EliGame.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-2-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/TycoonRaccoon.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Tycoon Raccoon</div>
+                <div>
+                    <button  class="project-link" onclick=" window.open('https://scratch.mit.edu/projects/657104396/','_blank')">
+                        <div style="text-align: center;">
+                            <img src="img/scratch.png" alt="Image" width="30px" height="30px" style="filter: invert(100%);"  >
+                        </div>
+                        <div>Play the game!</div>
+                    </button>
+                </div>
+                <p>2D runner game on Scratch. <br><br>
+                    In this short game you play as a cute raccoon
+                    trying to find his way out of the forest.
+                    You must dodge all obstacles and get past the 3 levels.
+                    The little raccoon must jump over rocks, crouch to avoid
+                    the hunting birds and shoot the logs to be able to jump over them.<span id="dots5">...</span>
+                    <span id="more5" style="display: none;">
+                    <br><br>
+                    Watch the video on the left to see the gameplay or play it yourself
+                    by clicking on the link above!
+                    <br><br>
+                    Even though this seems like a silly game, it means a lot to me so that
+                    is why I am adding it to this list.
+                    </span>
+                </p>
+                <button onclick="ReadMoreLess5()" id="read-more-less5" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess5() {
+                var dots = document.getElementById("dots5");
+                var moreText = document.getElementById("more5");
+                var btnText = document.getElementById("read-more-less5");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+    </div>
+    
+
+    
+
+
+    <div class="incoming-projects-page">
+        <div class="projects-title">
+            Incoming projects
+        </div>
+    </div>
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img src="img/up-arrow.png" width="26px" height="26px">
+    </button>
+    <script>
+        function scrollToTop(){
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
+
+
+

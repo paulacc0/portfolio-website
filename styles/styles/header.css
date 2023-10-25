@@ -1,0 +1,58 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(19, 13, 70);
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.pcc{
+    width: 80px;
+    margin-left: 12px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.reload-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.middle-header{
+    display: flex;
+    flex: 1;
+}
+
+.right-header{
+    margin-right: -10px;
+    width: 315px;
+}
+
+.top-buttons{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.top-buttons:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.top-buttons:active{
+    background-color: rgba(255, 255, 255, 0.25);
+}
