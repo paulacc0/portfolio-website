@@ -1,5 +1,5 @@
 .projects-page{
-    background-color: rgb(31, 21, 109);
+    background-color: rgb(27, 18, 97);
     color: white;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -7,7 +7,7 @@
 
 .projects-title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 70px;
     text-align: center;
 }
@@ -30,7 +30,7 @@
 }
 
 .project-1-sum{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(12, 7, 52);
     width: 500px;
     margin-right: 20px;
     margin-left: 20px;
@@ -48,7 +48,7 @@
 }
 
 .project-2-sum{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(16, 9, 71);
     width: 500px;
     margin-left: 20px;
     margin-right: 20px;
@@ -92,6 +92,16 @@
 }
 .project-link:active{
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+.incoming-projects-page{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;;
+    background-color: rgb(31, 21, 109);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 .read-more-less{
