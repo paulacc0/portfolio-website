@@ -374,6 +374,94 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
         <div class="projects-title">
             Incoming projects
         </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-1-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/MicroMouse.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Micromouse</div>
+                <p>We are currently building a micromouse that will be able to 
+                    solve mazes! <br><br>
+                    The mouse will be able to to find its way to the central
+                    area of the maze unaided. It will need to keep track of where
+                    it is and map out the maze until it detects when it has reached
+                    the centre.<span id="dots1i">...</span>
+                    <span id="more1i" style="display: none;">
+                    <br> <br>On the left there is a short video of what we have so far. We
+                    are currently working on wall detection and steering.<br> <br>
+
+                    We are a group of only 4 students currently working on this project 
+                    and we are all so excited to see how it will turn out!</span>
+                </p>
+                <button onclick="ReadMoreLess1i()" id="read-more-less1i" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess1i() {
+                var dots = document.getElementById("dots1i");
+                var moreText = document.getElementById("more1i");
+                var btnText = document.getElementById("read-more-less1i");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">UOB MAPP</div>
+                <p> In a group of 8 students, we are currently working on a mapping
+                    system for our university's campus.
+                    <br><br>
+                    Our app's aim is to guide new students, new staff or visitors
+                    and help them learn their way around campus.<span id="dots2i">...</span>
+                    <span id="more2i" style="display: none;">
+                    <br><br>
+                    The app will enable the user to enter a target
+                    room and direct them towards it by displaying a map with arrows
+                    indicating the way while keeping track of the user's location.
+                    <br><br>
+                    We have just started this project and are currently working along
+                    with stakeholders to decide our functional and non-functional 
+                    requirements as well as how the app itself will look like.
+                    <br><br>
+                    I will update with an image on a video as soon as we have made 
+                    some visual progress.</span>
+                </p>
+                <button onclick="ReadMoreLess2i()" id="read-more-less2i" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess2i() {
+                var dots = document.getElementById("dots2i");
+                var moreText = document.getElementById("more2i");
+                var btnText = document.getElementById("read-more-less2i");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
     </div>
     <button class="back-to-top" onclick="scrollToTop()">
         <img src="img/up-arrow.png" width="26px" height="26px">
