@@ -53,6 +53,16 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
             </script>
             <div class="line-between-buttons" style="border:1px solid #ffffff;
             display: inline;margin-left: -4px;padding-top: 5px;padding-bottom: 6px;"></div>
+            <button class="top-buttons" onclick="excitingScroll()">
+                EXCITING
+            </button>
+            <script>
+                function excitingScroll(){
+                    document.querySelector('.exciting-projects-page').scrollIntoView({behavior: 'smooth'})
+                }
+            </script>
+            <div class="line-between-buttons" style="border:1px solid #ffffff;
+            display: inline;margin-left: -4px;padding-top: 5px;padding-bottom: 6px;"></div>
             <button class="top-buttons" onclick="projectScroll()">
                 Projects
             </button>
@@ -78,8 +88,8 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
         <div class="welcome-div">
             <h1>WELCOME TO MY WEBSITE PORTFOLIO</h1>
             <h2>This is a showcase of everything I have learnt
-                and all the projects I have worked on in
-                the past year!
+                and all the projects I have worked on in my
+                programming journey so far!
             </h2>
         </div>
         <div class="right-main-page"></div>
@@ -89,17 +99,286 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
         <div class="about-me">
             <h1>Hi! I'm Paula (pah-oo-lah)</h1>
             <h2>I'm a second-year CS student seeking a year-long
-            placement in website design or(? game development
+            placement in game development
             and this my website portfolio! In the section below
-            I talk about projects I have completed in Python,
-            C, HMTL, CSS, JavaScript and Java.</h2>
+            I talk about projects I have completed in Unity, C#, C/C++, Python,
+            HMTL, CSS, JavaScript and Java.</h2>
         </div>
         <div class="right-main-page"></div>
     </div>
+
+    <div class="exciting-projects-page">
+        <div class="projects-title">
+            EXCITING PROJECT!
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-1-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/SorceryHavoc.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="project-1-sum" style="background-color: rgb(46, 7, 52);">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Sorcery Havoc</div>
+                <p>I am currently working on a solo project in Unity! <br><br>
+                    To expand my knowledge of the software and C# I started making
+                    a 3D game called Sorcery Chaos inspired by one of my
+                    favourite "co-op" games, Overcooked!<span id="dots1e">...</span>
+                    <span id="more1e" style="display: none;"><br><br>
+
+                    In this game, you will be responsible for the many orders 
+                    coming in at your potion store. As orders come in, you will 
+                    have to prepare several different potions and of course,
+                    make sure every customer gets their order in time!<br><br>
+
+                    My journey so far in the making of this game has been 
+                    extremely interesting and I've enjoyed every second 
+                    of it! Even though I've had to go through many errors and bugs 
+                    (and the many more to come), it is so rewarding when you 
+                    get past them.<br><br></span>
+                </p>
+                <button onclick="ReadMoreLess1e()" id="read-more-less1e" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess1e() {
+                var dots = document.getElementById("dots1e");
+                var moreText = document.getElementById("more1e");
+                var btnText = document.getElementById("read-more-less1e");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+    </div>
+
+
+    <div class="incoming-projects-page">
+        <div class="projects-title">
+            Incoming projects
+        </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-1-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/MicroMouse.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Micromouse</div>
+                <p>We are currently building an Arduino micromouse that will be able to 
+                    solve mazes!<br><br>
+                    The mouse will be able to to find its way to the central
+                    area of the maze unaided. It will need to keep track of where
+                    it is and map out the maze until it detects when it has reached
+                    the centre.<span id="dots1i">...</span>
+                    <span id="more1i" style="display: none;">
+                    <br> <br>On the left there is a short video of what we have so far. We
+                    are currently working on wall detection and steering.<br> <br>
+
+                    We are a group of only 4 students currently working on this project 
+                    and we are all so excited to see how it will turn out!</span>
+                </p>
+                <button onclick="ReadMoreLess1i()" id="read-more-less1i" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess1i() {
+                var dots = document.getElementById("dots1i");
+                var moreText = document.getElementById("more1i");
+                var btnText = document.getElementById("read-more-less1i");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">UOB MAPP</div>
+                <p> In a group of 8 students, we are currently working on a mapping
+                    system for our university's campus.
+                    <br><br>
+                    Our app's aim is to guide new students, new staff or visitors
+                    and help them learn their way around campus.<span id="dots2i">...</span>
+                    <span id="more2i" style="display: none;">
+                    <br><br>
+                    The app will enable the user to enter a target
+                    room and direct them towards it by displaying a map with arrows
+                    indicating the way while keeping track of the user's location.
+                    <br><br>
+                    We have just started this project and are currently working along
+                    with stakeholders to decide our functional and non-functional 
+                    requirements as well as how the app itself will look like.
+                    <br><br>
+                    I will update with an image on a video as soon as we have made 
+                    some visual progress.</span>
+                </p>
+                <button onclick="ReadMoreLess2i()" id="read-more-less2i" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess2i() {
+                var dots = document.getElementById("dots2i");
+                var moreText = document.getElementById("more2i");
+                var btnText = document.getElementById("read-more-less2i");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="project-mapp-photo">
+                <img style="width: auto; 
+                max-height: 100%;" src="img/MAPP.png">
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
     <div class="projects-page">
         <div class="projects-title">
             Projects
         </div>
+        <div class="project-1">
+            <div class="left-main-page"></div>
+            <div class="project-1-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/EliGame.mp4" type="video/mp4" />
+                </video>
+            </div>
+            
+            <div class="project-1-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">ELI</div>
+                
+                <p>2D platformer game on Unity using C#. <br><br>
+                    This game is a short level where you
+                    control the main character named Eli on his
+                    travels across slime-infested dungeons.
+                    <br><br>
+                    This is the game I am the most proud of so far.<span id="dots4">...</span>
+                    <span id="more4" style="display: none;">
+                    It was a huge step from my previous games in 
+                    Scratch (linked below).
+                    <br><br>
+                    Please do watch the short video on the right showcasing the game!
+                    <br><br>
+                    When I started this project I knew nothing about C#,
+                    so I am really happy with what I was able to achieve.
+                    I did all of the pixel art myself as well, including all the
+                    animations. I had never animated before either so I
+                    am amazed by how it turned out. I hope to be able to
+                    expand on this project in a near future and add in
+                    some more levels, new mechanisms and a more thought through story.</span>
+                </p>
+                
+                <button onclick="ReadMoreLess5()" id="read-more-less5" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess5() {
+                var dots = document.getElementById("dots5");
+                var moreText = document.getElementById("more5");
+                var btnText = document.getElementById("read-more-less5");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        <div class="project-2">
+            <div class="left-main-page"></div>
+            <div class="project-2-sum">
+                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Tycoon Raccoon</div>
+                <div>
+                    <button  class="project-link" onclick=" window.open('https://scratch.mit.edu/projects/657104396/','_blank')">
+                        <div style="text-align: center;">
+                            <img src="img/scratch.png" alt="Image" width="30px" height="30px" style="filter: invert(100%);"  >
+                        </div>
+                        <div>Play the game!</div>
+                    </button>
+                </div>
+                <p>2D runner game on Scratch. <br><br>
+                    In this short game you play as a cute raccoon
+                    trying to find his way out of the forest.
+                    You must dodge all obstacles and get past the 3 levels.
+                    The little raccoon must jump over rocks, crouch to avoid
+                    the hunting birds and shoot the logs to be able to jump over them.<span id="dots5">...</span>
+                    <span id="more5" style="display: none;">
+                    <br><br>
+                    Watch the video on the left to see the gameplay or play it yourself
+                    by clicking on the link above!
+                    <br><br>
+                    Even though this seems like a silly game, it means a lot to me so that
+                    is why I am adding it to this list.
+                    </span>
+                </p>
+                <button onclick="ReadMoreLess4()" id="read-more-less4" class="read-more-less">Read more</button>
+
+                <script>
+                function ReadMoreLess4() {
+                var dots = document.getElementById("dots4");
+                var moreText = document.getElementById("more4");
+                var btnText = document.getElementById("read-more-less4");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+                </script>
+            </div>
+            <div class="project-2-video">
+                <video width="400px" height="250px" controls>
+                    <source src="img/TycoonRaccoon.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="right-main-page"></div>
+        </div>
+        
         <div class="project-1">
             <div class="left-main-page"></div>
             <div class="project-1-video">
@@ -259,210 +538,13 @@ poner limite a como de pequenia se hace la pantalla (mirar tutorial hmtl)
             </div>
             <div class="right-main-page"></div>
         </div>
-        <div class="project-2">
-            <div class="left-main-page"></div>
-            <div class="project-2-sum">
-                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">ELI</div>
-                <p>2D platformer game on Unity using C#. <br><br>
-                    This game is a short level where you
-                    control the main character named Eli on his
-                    travels across slime-infested dungeons.
-                    <br><br>
-                    This is the game I am the most proud of so far.<span id="dots4">...</span>
-                    <span id="more4" style="display: none;">
-                    It was a huge step from my previous games in 
-                    Scratch (linked below).
-                    <br><br>
-                    Please do watch the short video on the right showcasing the game!
-                    <br><br>
-                    When I started this project I knew nothing about C#,
-                    so I am really happy with what I was able to achieve.
-                    I did all of the pixel art myself as well, including all the
-                    animations. I had never animated before either so I
-                    am amazed by how it turned out. I hope to be able to
-                    expand on this project in a near future and add in
-                    some more levels, new mechanisms and a more thought through story.</span>
-                </p>
-                <button onclick="ReadMoreLess4()" id="read-more-less4" class="read-more-less">Read more</button>
-
-                <script>
-                function ReadMoreLess4() {
-                var dots = document.getElementById("dots4");
-                var moreText = document.getElementById("more4");
-                var btnText = document.getElementById("read-more-less4");
-
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-                }
-                </script>
-            </div>
-            <div class="project-2-video">
-                <video width="400px" height="250px" controls>
-                    <source src="img/EliGame.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <div class="right-main-page"></div>
-        </div>
-        <div class="project-1">
-            <div class="left-main-page"></div>
-            <div class="project-2-video">
-                <video width="400px" height="250px" controls>
-                    <source src="img/TycoonRaccoon.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <div class="project-1-sum">
-                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Tycoon Raccoon</div>
-                <div>
-                    <button  class="project-link" onclick=" window.open('https://scratch.mit.edu/projects/657104396/','_blank')">
-                        <div style="text-align: center;">
-                            <img src="img/scratch.png" alt="Image" width="30px" height="30px" style="filter: invert(100%);"  >
-                        </div>
-                        <div>Play the game!</div>
-                    </button>
-                </div>
-                <p>2D runner game on Scratch. <br><br>
-                    In this short game you play as a cute raccoon
-                    trying to find his way out of the forest.
-                    You must dodge all obstacles and get past the 3 levels.
-                    The little raccoon must jump over rocks, crouch to avoid
-                    the hunting birds and shoot the logs to be able to jump over them.<span id="dots5">...</span>
-                    <span id="more5" style="display: none;">
-                    <br><br>
-                    Watch the video on the left to see the gameplay or play it yourself
-                    by clicking on the link above!
-                    <br><br>
-                    Even though this seems like a silly game, it means a lot to me so that
-                    is why I am adding it to this list.
-                    </span>
-                </p>
-                <button onclick="ReadMoreLess5()" id="read-more-less5" class="read-more-less">Read more</button>
-
-                <script>
-                function ReadMoreLess5() {
-                var dots = document.getElementById("dots5");
-                var moreText = document.getElementById("more5");
-                var btnText = document.getElementById("read-more-less5");
-
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-                }
-                </script>
-            </div>
-            <div class="right-main-page"></div>
-        </div>
     </div>
     
 
     
 
 
-    <div class="incoming-projects-page">
-        <div class="projects-title">
-            Incoming projects
-        </div>
-        <div class="project-1">
-            <div class="left-main-page"></div>
-            <div class="project-1-video">
-                <video width="400px" height="250px" controls>
-                    <source src="img/MicroMouse.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <div class="project-1-sum">
-                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">Micromouse</div>
-                <p>We are currently building a micromouse that will be able to 
-                    solve mazes! <br><br>
-                    The mouse will be able to to find its way to the central
-                    area of the maze unaided. It will need to keep track of where
-                    it is and map out the maze until it detects when it has reached
-                    the centre.<span id="dots1i">...</span>
-                    <span id="more1i" style="display: none;">
-                    <br> <br>On the left there is a short video of what we have so far. We
-                    are currently working on wall detection and steering.<br> <br>
-
-                    We are a group of only 4 students currently working on this project 
-                    and we are all so excited to see how it will turn out!</span>
-                </p>
-                <button onclick="ReadMoreLess1i()" id="read-more-less1i" class="read-more-less">Read more</button>
-
-                <script>
-                function ReadMoreLess1i() {
-                var dots = document.getElementById("dots1i");
-                var moreText = document.getElementById("more1i");
-                var btnText = document.getElementById("read-more-less1i");
-
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-                }
-                </script>
-            </div>
-            <div class="right-main-page"></div>
-        </div>
-        <div class="project-2">
-            <div class="left-main-page"></div>
-            <div class="project-2-sum">
-                <div style="font-size: 30px; font-weight: 600; margin-bottom: 10px;">UOB MAPP</div>
-                <p> In a group of 8 students, we are currently working on a mapping
-                    system for our university's campus.
-                    <br><br>
-                    Our app's aim is to guide new students, new staff or visitors
-                    and help them learn their way around campus.<span id="dots2i">...</span>
-                    <span id="more2i" style="display: none;">
-                    <br><br>
-                    The app will enable the user to enter a target
-                    room and direct them towards it by displaying a map with arrows
-                    indicating the way while keeping track of the user's location.
-                    <br><br>
-                    We have just started this project and are currently working along
-                    with stakeholders to decide our functional and non-functional 
-                    requirements as well as how the app itself will look like.
-                    <br><br>
-                    I will update with an image on a video as soon as we have made 
-                    some visual progress.</span>
-                </p>
-                <button onclick="ReadMoreLess2i()" id="read-more-less2i" class="read-more-less">Read more</button>
-
-                <script>
-                function ReadMoreLess2i() {
-                var dots = document.getElementById("dots2i");
-                var moreText = document.getElementById("more2i");
-                var btnText = document.getElementById("read-more-less2i");
-
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-                }
-                </script>
-            </div>
-            <div class="right-main-page"></div>
-        </div>
-    </div>
+    
     <button class="back-to-top" onclick="scrollToTop()">
         <img src="img/up-arrow.png" width="26px" height="26px">
     </button>

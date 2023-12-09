@@ -77,6 +77,15 @@
     padding: 30px;
 }
 
+.project-mapp-photo{
+    background-color: blueviolet;
+    height: 200px;
+    width: 470px;
+    margin-top: 30px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
 .project-link{
     background-color: rgba(255, 255, 255, 0.10);
     color: white;
@@ -94,10 +103,19 @@
     background-color: rgba(255, 255, 255, 0.25);
 }
 
+.exciting-projects-page{
+    background-color: rgb(90, 25, 90);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
 .incoming-projects-page{
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;;
+    background-size: cover;
     background-color: rgb(31, 21, 109);
     color: white;
     padding-top: 80px;
