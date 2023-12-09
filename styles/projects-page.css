@@ -79,8 +79,8 @@
 
 .project-mapp-photo{
     background-color: blueviolet;
-    height: 200px;
-    width: 470px;
+    height: 180px;
+    width: 450px;
     margin-top: 30px;
     margin-right: 20px;
     object-fit: cover;
@@ -105,8 +105,6 @@
 
 .exciting-projects-page{
     background-color: rgb(90, 25, 90);
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     padding-top: 80px;
     padding-bottom: 60px;
